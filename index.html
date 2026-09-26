@@ -49,6 +49,10 @@
   .folio__dot span b { color: var(--v-ink); font-weight: 600; margin-bottom: .5em; }
   .folio__dot.is-active span { opacity: 1; transition-duration: .3s; transition-delay: .15s; }
   /* на тёмной главе 4 фолио переходит в тёмную схему, на тёплой плашке главы 2 – в кремовую */
+  /* плашка «демо под заказчика»: снимается перед сдачей и при упаковке в Тильду */
+  .demo-for { display: inline-flex; align-items: center; gap: .55em; margin: 0 0 var(--v-4); padding: .45em .9em .45em .7em; border-radius: 999px; background: var(--v-accent); color: var(--v-accent-ink); font-family: var(--v-font-text); font-size: var(--v-t-sm); font-weight: 500; line-height: 1.2; letter-spacing: 0; box-shadow: 0 6px 18px rgb(0 0 0 / .12); }
+  .demo-for__dot { width: .55em; height: .55em; border-radius: 50%; background: var(--v-accent-ink); opacity: .85; }
+  @media (max-width: 600px) { .demo-for { font-size: .82rem; padding: .4em .8em .4em .6em; } }
   .folio.is-dark { --v-ink: #f2f1ee; --v-ink-soft: #a7abb1; --v-canvas: #171a1d; --v-accent: #d19352;
     --v-hair-strong: color-mix(in oklab, #f2f1ee 32%, transparent); }
   .folio.is-dark .folio__dot span b { color: #f2f1ee; }
@@ -443,6 +447,7 @@
         <div class="cover__scrim" aria-hidden="true"></div>
         <div class="v-wrap title">
           <div class="title__body" data-v-cue="0 0.86 0">
+            <p class="demo-for"><span class="demo-for__dot" aria-hidden="true"></span>Демо для Сергея · по заказу «Сайт по натяжным потолкам»</p>
             <span class="v-label">Замер · расчёт · монтаж · {{город}}</span>
             <h1 class="v-display" data-v-kinetic="lines">Натяжные потолки за один день</h1>
             <p class="v-lede">Матовые, сатиновые, глянцевые и тканевые. Замер в удобное время, расчёт на месте: <b>после замера цена не меняется</b>, монтаж с уборкой.</p>
