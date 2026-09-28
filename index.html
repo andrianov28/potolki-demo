@@ -2,10 +2,9 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{{компания}} · натяжные потолки в {{город}}</title>
-<meta name="description" content="Натяжные потолки в {{город}}: полотно и профиль с названиями, цена за м² с монтажом, после замера не меняется. Монтаж за день с уборкой, гарантия в договоре.">
+<title>Потолки Климова · натяжные потолки в Таганроге</title>
+<meta name="description" content="Натяжные потолки в Таганроге и Неклиновском районе: матовое от 450 ₽ за м² с работой и материалом, после замера цена не меняется. Бесплатный замер, комната за день, гарантия 10 лет на полотно.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -50,9 +49,6 @@
   .folio__dot.is-active span { opacity: 1; transition-duration: .3s; transition-delay: .15s; }
   /* на тёмной главе 4 фолио переходит в тёмную схему, на тёплой плашке главы 2 – в кремовую */
   /* плашка «демо под заказчика»: снимается перед сдачей и при упаковке в Тильду */
-  .demo-for { display: inline-flex; align-items: center; gap: .55em; margin: 0 0 var(--v-4); padding: .45em .9em .45em .7em; border-radius: 999px; background: var(--v-accent); color: var(--v-accent-ink); font-family: var(--v-font-text); font-size: var(--v-t-sm); font-weight: 500; line-height: 1.2; letter-spacing: 0; box-shadow: 0 6px 18px rgb(0 0 0 / .12); }
-  .demo-for__dot { width: .55em; height: .55em; border-radius: 50%; background: var(--v-accent-ink); opacity: .85; }
-  @media (max-width: 600px) { .demo-for { font-size: .82rem; padding: .4em .8em .4em .6em; } }
   .folio.is-dark { --v-ink: #f2f1ee; --v-ink-soft: #a7abb1; --v-canvas: #171a1d; --v-accent: #d19352;
     --v-hair-strong: color-mix(in oklab, #f2f1ee 32%, transparent); }
   .folio.is-dark .folio__dot span b { color: #f2f1ee; }
@@ -253,7 +249,7 @@
   .built { margin-top: var(--v-8); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
   .built__head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--v-4); margin-bottom: var(--v-5); }
   .built__head p { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 44ch; text-align: right; }
-  .built ul { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: var(--v-5); }
+  .built ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--v-5); }
   .built figure { margin: 0; }
   .built .fig { position: relative; aspect-ratio: 4 / 3; border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); }
   .built .fig img { width: 100%; height: 100%; object-fit: cover; }
@@ -309,27 +305,6 @@
   .midcta__side { display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
   .midcta__side span { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 26ch; }
   @media (max-width: 860px) { .midcta .v-wrap { padding-block: var(--v-6); } .midcta p { font-size: var(--v-t-base); } }
-
-  /* ---- глава 6: отзывы с Яндекс.Карт ------------------------------------------- */
-  .reviews__head { display: flex; flex-wrap: wrap; gap: var(--v-6); align-items: end; justify-content: space-between; margin-bottom: var(--v-7); }
-  .reviews__head h2 { font-size: var(--v-t-2xl); max-width: 16ch; }
-  .reviews__head .v-label { display: block; margin-bottom: var(--v-3); }
-  .reviews__rating { display: grid; grid-template-columns: auto 1fr; gap: var(--v-1) var(--v-4); align-items: center; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
-  .reviews__num { grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-2xl); line-height: 1; color: var(--v-ink); }
-  .reviews__rating a { color: var(--v-ink); font-weight: 500; text-decoration-color: var(--v-accent); display: inline-block; padding: .7em 0; margin: -.7em 0; }
-  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
-    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
-    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
-  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
-  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
-  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
-  .reviews__item--big .reviews__text { font-size: var(--v-t-lg); line-height: 1.4; }
-  .reviews__text { text-wrap: pretty; }
-  .reviews .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
-  .reviews__meta b { color: var(--v-ink); font-weight: 600; }
-  .reviews .reviews__note { margin-top: var(--v-7); padding-top: var(--v-4); border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); max-width: 60ch; }
-  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } .reviews__head { margin-bottom: var(--v-6); } }
 
   /* ---- что входит в цену ----------------------------------------------------- */
   .estimate { display: grid; grid-template-columns: 7fr 4fr; gap: var(--v-8) clamp(2rem, 6vw, 6rem); align-items: start; }
@@ -391,7 +366,7 @@
   .v-page .v-wrap { width: min(100% - 2 * var(--v-gutter) - 2 * clamp(0rem, 4vw, 3.5rem), 76rem); margin-inline: auto; }
   @media (max-width: 860px) { .v-page .v-wrap { width: min(100% - 2 * var(--v-gutter), 76rem); } }
   @media (hover: hover) and (pointer: fine) {
-    .toc a:hover, .nav__mark:hover, .nav__links a:hover, .nav__tel:hover, .title__tel:hover, .colophon__msg a:hover, .reviews__rating a:hover { color: var(--v-accent); }
+    .toc a:hover, .nav__mark:hover, .nav__links a:hover, .nav__tel:hover, .title__tel:hover, .colophon__msg a:hover { color: var(--v-accent); }
     .toc a:hover img { opacity: .92; }
   }
 </style>
@@ -414,20 +389,19 @@
   <header class="nav is-top" id="nav">
     <div class="nav__in">
       <!-- {{логотип}}: если есть файл, заменить текст на <img>, высота 1.4em -->
-      <a class="nav__mark" href="#top"><i aria-hidden="true"></i>{{компания}}</a>
+      <a class="nav__mark" href="#top"><i aria-hidden="true"></i>Потолки Климова</a>
       <nav class="nav__links" id="navLinks" aria-label="Разделы">
         <a href="#ch1">Замер</a>
         <a href="#ch2">Полотно</a>
         <a href="#ch3">Расчёт</a>
         <a href="#ch4">Монтаж</a>
-        <a href="#brigada">Бригада</a>
+        <a href="#brigada">Мастер</a>
         <a href="#ch5">Приёмка</a>
-        <a href="#otzyvy">Отзывы</a>
         <a href="#cena">Что в цене</a>
         <a href="#raschet">Контакты</a>
       </nav>
-      <a class="nav__tel" href="tel:{{телефон}}">{{телефон}}</a>
-      <a class="v-btn nav__btn" href="{{ссылка-расчёта}}">Рассчитать стоимость</a>
+      <a class="nav__tel" href="tel:+79000000000">+7 900 000-00-00</a>
+      <a class="v-btn nav__btn" href="https://t.me/potolki_klimov" target="_blank" rel="noopener">Рассчитать стоимость</a>
       <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Меню"><i></i><i></i></button>
       <span class="nav__bar" id="navBar" aria-hidden="true"></span>
     </div>
@@ -447,20 +421,19 @@
         <div class="cover__scrim" aria-hidden="true"></div>
         <div class="v-wrap title">
           <div class="title__body" data-v-cue="0 0.86 0">
-            <p class="demo-for"><span class="demo-for__dot" aria-hidden="true"></span>Демо для Сергея · по заказу «Сайт по натяжным потолкам»</p>
-            <span class="v-label">Замер · расчёт · монтаж · {{город}}</span>
+            <span class="v-label">Замер · расчёт · монтаж · Таганрог</span>
             <h1 class="v-display" data-v-kinetic="lines">Натяжные потолки за один день</h1>
-            <p class="v-lede">Матовые, сатиновые, глянцевые и тканевые. Замер в удобное время, расчёт на месте: <b>после замера цена не меняется</b>, монтаж с уборкой.</p>
+            <p class="v-lede">Матовые, сатиновые, глянцевые и тканевые. Бесплатный замер в удобное время, расчёт на месте: <b>после замера цена не меняется</b>, монтаж с уборкой.</p>
             <div class="title__cta">
               <!-- {{ссылка-расчёта}}: форма заявки (имя, телефон, площадь или число комнат). В Тильде #popup:raschet, или ссылка на мессенджер. Одна и та же во всех кнопках -->
-              <a class="v-btn" href="{{ссылка-расчёта}}">Рассчитать стоимость</a>
-              <p class="title__price">Матовый потолок от <b>{{цена}} ₽</b> за м² с профилем и монтажом. <span>Точная сумма после замера, записана в договоре и не меняется.</span></p>
+              <a class="v-btn" href="https://t.me/potolki_klimov" target="_blank" rel="noopener">Рассчитать стоимость</a>
+              <p class="title__price">Матовый потолок от <b>450 ₽</b> за м² с профилем и монтажом. <span>Точная сумма после замера, записана в договоре и не меняется.</span></p>
             </div>
           </div>
           <div class="title__foot">
-            <span><b>0.1</b>Комната, монтаж, образцы · {{город}}</span>
+            <span><b>0.1</b>Комната, монтаж, образцы · Таганрог</span>
             <!-- в href телефон без пробелов: tel:+7XXXXXXXXXX -->
-            <a class="title__tel" href="tel:{{телефон}}">{{телефон}}</a>
+            <a class="title__tel" href="tel:+79000000000">+7 900 000-00-00</a>
           </div>
         </div>
       </div>
@@ -505,10 +478,10 @@
         <div class="spread__copy" data-v-in data-v-stagger="70">
           <span class="v-label">Этап 1 из 5</span>
           <h2 class="v-display">Цена по вашей комнате, а не «от»</h2>
-          <p>Приезжаем в удобное время: {{условия замера}}. Обмеряем периметр, считаем <b>углы, обходы труб и точки под светильники</b>: именно из них складывается разница между «от» на сайте и итогом в договоре.</p>
+          <p>Приезжаем в удобное время: замер бесплатный, по городу в день обращения или на следующий. Обмеряем периметр, считаем <b>углы, обходы труб и точки под светильники</b>: именно из них складывается разница между «от» на сайте и итогом в договоре.</p>
           <dl class="facts">
             <div><dt>Что в этапе</dt><dd>Обмер периметра и диагоналей, высота, углы, трубы, светильники и люстра, карниз.</dd></div>
-            <div><dt>Когда</dt><dd>{{условия замера}}. Время выезда согласуем в заявке, привозим образцы полотна.</dd></div>
+            <div><dt>Когда</dt><dd>Замер бесплатный: по Таганрогу в день обращения или на следующий, по району до 40 км. Время выезда согласуем в заявке, привозим образцы полотна.</dd></div>
             <div><dt>Результат</dt><dd>Расчёт на месте: полотно, профиль, работы, отдельно светильники и обходы. Эта сумма идёт в договор.</dd></div>
           </dl>
         </div>
@@ -522,7 +495,7 @@
         <div class="inter__text">
           <span class="v-label">Глава вторая</span>
           <h2 class="v-display">Полотно</h2>
-          <p>Матовое, сатиновое, глянцевое или тканевое. Здесь выбираем фактуру и свет, и здесь мы называем производителя, а не просто «хорошее полотно».</p>
+          <p>Матовое, сатиновое, глянцевое или тканевое. Здесь выбираем фактуру и свет, и здесь мы говорим, чьё полотно, и показываем сертификаты, а не просто «хорошее полотно».</p>
         </div>
       </div>
     </section>
@@ -535,18 +508,18 @@
             <span class="v-label frame__head" data-v-cue="0 1 0 0" data-v-rise="0">Этап 2 из 5 · Полотно</span>
             <div class="frame__cue" data-v-cue="0 0.34 0 0.05">
               <span class="v-label">Материал</span>
-              <h3>Полотно с названием производителя</h3>
-              <p>Матовое, сатиновое, глянцевое или тканевое: производитель и ширина рулона <b>записаны в договоре</b>. Образцы привозим на замер, смотрите при своём свете.</p>
+              <h3>Полотно с сертификатом, а не «хорошее»</h3>
+              <p>Матовое, сатиновое, глянцевое или тканевое: полотна немецкие и китайские, <b>сертификаты показываем на замере</b>. Образцы привозим с собой, смотрите при своём свете.</p>
             </div>
             <div class="frame__cue" data-v-cue="0.32 0.66 0.05 0.05">
               <span class="v-label">Цена</span>
               <h3>За м² с профилем и монтажом</h3>
-              <p>Матовое от <b>{{цена матовое}} ₽</b>, сатиновое от <b>{{цена сатин}} ₽</b>, глянцевое от <b>{{цена глянец}} ₽</b>, тканевое от <b>{{цена ткань}} ₽</b> за м². Светильники, обходы труб и углы сверх четырёх считаются отдельно и видны в расчёте.</p>
+              <p>Матовое от <b>450 ₽</b>, сатиновое от <b>480 ₽</b>, глянцевое от <b>500 ₽</b>, тканевое от <b>1 200 ₽</b> за м², с работой и материалом. Отдельно только светильники, обходы труб и углы сверх четырёх, других доплат нет.</p>
             </div>
             <div class="frame__cue" data-v-cue="0.64 1 0.05 0">
               <span class="v-label">Гарантия</span>
               <h3>Гарантия в договоре, а не на словах</h3>
-              <p>На полотно и монтаж – <b>{{гарантия}}</b>, отдельным пунктом договора. Провис, отошедшая вставка или шов – приезжаем по заявке.</p>
+              <p>На полотно – <b>10 лет</b>, на монтаж – <b>3 года</b>, отдельным пунктом договора. Провис, отошедшая вставка или шов – приезжаем по заявке.</p>
             </div>
             <div class="frame__steps" aria-hidden="true"><i></i><i></i><i></i></div>
           </div>
@@ -583,8 +556,8 @@
           <p>В договоре каждая позиция названа: <b>полотно и производитель, профиль, число светильников, обходов и углов</b>, дата монтажа. Захотели добавить подсветку или люстру после подписи? Считаем разницу и подписываем допсоглашение, без «доплатите на месте».</p>
           <dl class="facts">
             <div><dt>Что в договоре</dt><dd>Полотно, профиль, вставка, работы, светильники и закладные, обходы, дата монтажа, гарантия.</dd></div>
-            <div><dt>Срок</dt><dd>От замера до монтажа – {{срок}}. Дата монтажа записана в договоре.</dd></div>
-            <div><dt>Оплата</dt><dd>{{условия оплаты}}. Никаких «доплат на месте»: всё посчитано до монтажа.</dd></div>
+            <div><dt>Срок</dt><dd>Одна комната – за день, вся квартира – 1–3 дня после замера. Дату монтажа записываем в договор.</dd></div>
+            <div><dt>Оплата</dt><dd>Предоплата только на материал – 30 %, остальное после монтажа. Никаких «доплат на месте»: всё посчитано до монтажа.</dd></div>
           </dl>
         </div>
       </div>
@@ -622,21 +595,21 @@
       </div>
     </section>
 
-    <!-- БРИГАДА: кто приедет домой. Фото клиента (photo_2026-09-10_21-15-26.jpg → assets/brigada.webp), три факта слотами -->
-    <section class="v-section" data-v-act="flow" id="brigada" aria-label="Бригада">
+    <!-- МАСТЕР: кто приедет домой. Портрет Сергея (от-Сергея/сергей.jpg → assets/master.webp). Фото с помощником Сергей не присылал -->
+    <section class="v-section" data-v-act="flow" id="brigada" aria-label="Мастер">
       <div class="v-wrap spread spread--flip">
         <figure class="spread__fig spread__fig--square" data-v-reveal="right" data-v-reveal-at="0.1 0.42">
-          <div class="fig"><div data-v-parallax="0.4"><img src="assets/brigada.webp" alt="Бригада на объекте" width="1024" height="1024" loading="lazy" decoding="async"></div></div>
-          <figcaption><b>4.2</b><span>Бригада на объекте.</span></figcaption>
+          <div class="fig"><div data-v-parallax="0.4"><img src="assets/master.webp" alt="Сергей Климов, мастер по натяжным потолкам, на объекте" width="1024" height="1024" loading="lazy" decoding="async"></div></div>
+          <figcaption><b>4.2</b><span>Сергей Климов на объекте.</span></figcaption>
         </figure>
         <div class="spread__copy" data-v-in data-v-stagger="70">
-          <span class="v-label">Бригада</span>
+          <span class="v-label">Мастер</span>
           <h2 class="v-display">Кто приедет к вам домой</h2>
-          <p>Одна и та же бригада на замере и на монтаже: <b>старший знает вашу комнату</b>, а не читает её с бумажки. Приезжаем ко времени из договора, в обуви для дома, с пылесосом и плёнкой.</p>
+          <p>Замер и монтаж делает один человек: <b>Сергей сам видел вашу комнату</b>, а не читает её с бумажки. Приезжаем вдвоём с помощником, ко времени, после себя убираем.</p>
           <dl class="facts">
-            <div><dt>Старший</dt><dd>{{бригада старший}}</dd></div>
-            <div><dt>Состав</dt><dd>{{бригада человек}}</dd></div>
-            <div><dt>Приезжаем</dt><dd>{{бригада приезд}}</dd></div>
+            <div><dt>Старший</dt><dd>Сергей Климов, самозанятый, потолками с 2016 года. Сам замеряет, сам монтирует и принимает потолок с вами.</dd></div>
+            <div><dt>Состав</dt><dd>Двое: Сергей и помощник.</dd></div>
+            <div><dt>Приезжаем</dt><dd>Ко времени, о котором договорились. После монтажа убираем за собой.</dd></div>
           </dl>
         </div>
       </div>
@@ -670,7 +643,7 @@
             <dl class="facts">
               <div><dt>Проверяем</dt><dd>Ровность при боковом свете, углы, обходы труб, вставку, каждый светильник.</dd></div>
               <div><dt>Документы</dt><dd>Договор, акт приёмки, гарантийный талон, документы на полотно.</dd></div>
-              <div><dt>Гарантия</dt><dd>{{гарантия}} на полотно и монтаж. Приезжаем по заявке, а не «после сезона».</dd></div>
+              <div><dt>Гарантия</dt><dd>10 лет на полотно, 3 года на монтаж. Приезжаем по заявке, а не «после сезона».</dd></div>
             </dl>
           </div>
         </div>
@@ -681,12 +654,13 @@
         <div class="built" data-v-in data-v-stagger="80">
           <div class="built__head">
             <span class="v-label">Сделано</span>
-            <p>Настоящие потолки, а не картинки из интернета: комната, тип полотна, когда сделали.</p>
+            <p>Настоящие потолки Сергея, а не картинки из интернета: комната и тип полотна.</p>
           </div>
           <ul>
-            <li><figure><div class="fig fig--slot" role="img" aria-label="{{работа 1 фото}}"><span>{{работа 1 фото}}</span></div><figcaption><b>5.2</b><span>{{работа 1}}</span></figcaption></figure></li>
-            <li><figure><div class="fig fig--slot" role="img" aria-label="{{работа 2 фото}}"><span>{{работа 2 фото}}</span></div><figcaption><b>5.3</b><span>{{работа 2}}</span></figcaption></figure></li>
-            <li><figure><div class="fig fig--slot" role="img" aria-label="{{работа 3 фото}}"><span>{{работа 3 фото}}</span></div><figcaption><b>5.4</b><span>{{работа 3}}</span></figcaption></figure></li>
+            <li><figure><div class="fig"><img src="assets/kuhnya.webp" alt="Двухуровневый натяжной потолок на кухне со светодиодной подсветкой" width="1200" height="900" loading="lazy" decoding="async"></div><figcaption><b>5.2</b><span>Кухня · двухуровневый потолок с подсветкой и точечными светильниками</span></figcaption></figure></li>
+            <li><figure><div class="fig"><img src="assets/gostinaya.webp" alt="Глянцевый натяжной потолок в гостиной с люстрой и точечными светильниками" width="1200" height="900" loading="lazy" decoding="async"></div><figcaption><b>5.3</b><span>Гостиная · глянцевое полотно, люстра и точечные светильники</span></figcaption></figure></li>
+            <li><figure><div class="fig"><img src="assets/koridor.webp" alt="Матовый натяжной потолок в коридоре и гостиной с трековыми светильниками" width="1200" height="900" loading="lazy" decoding="async"></div><figcaption><b>5.4</b><span>Коридор и гостиная · матовое полотно, трековые светильники</span></figcaption></figure></li>
+            <li><figure><div class="fig"><img src="assets/spalnya.webp" alt="Матовый натяжной потолок в спальне с точечными светильниками" width="1200" height="900" loading="lazy" decoding="async"></div><figcaption><b>5.5</b><span>Спальня · матовое полотно, точечные светильники</span></figcaption></figure></li>
           </ul>
         </div>
       </div>
@@ -695,56 +669,11 @@
     <!-- ПОВТОР КНОПКИ -->
     <section class="midcta" data-v-act="flow" aria-label="Рассчитать стоимость">
       <div class="v-wrap" data-v-in data-v-stagger="70">
-        <p>Пять глав прочитали. Дальше отзывы и состав цены, но считать можно уже сейчас: <b>от {{цена}} ₽ за м²</b> с профилем и монтажом.</p>
+        <p>Пять глав прочитали. Дальше состав цены, но считать можно уже сейчас: <b>от 450 ₽ за м²</b> с работой и материалом.</p>
         <div class="midcta__side">
-          <span>Перезвоним, уточним комнату и назовём ориентир ещё до замера</span>
-          <a class="v-btn" href="{{ссылка-расчёта}}">Рассчитать стоимость</a>
+          <span>Напишите в Телеграм: уточним комнату и назовём ориентир ещё до замера</span>
+          <a class="v-btn" href="https://t.me/potolki_klimov" target="_blank" rel="noopener">Рассчитать стоимость</a>
         </div>
-      </div>
-    </section>
-
-    <!-- ИНТЕРТИТР 6 · ОТЗЫВЫ -->
-    <section class="inter" data-v-act="flow" id="ch6" aria-label="Глава 6. Отзывы">
-      <div class="v-wrap inter__grid" data-v-in data-v-stagger="90">
-        <div class="inter__num" aria-hidden="true">0<em>6</em></div>
-        <div class="inter__text">
-          <span class="v-label">Глава шестая</span>
-          <h2 class="v-display">Отзывы</h2>
-          <p>Как есть, с карточки компании на Яндекс.Картах: имя, дата, оценка. Ссылка на карточку рядом, проверить можно за минуту.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ГЛАВА 6 · ОТЗЫВЫ С ЯНДЕКС.КАРТ. Слоты заполняются из карточки клиента; выдуманных отзывов здесь не бывает.
-         Если у клиента отзывов нет или их меньше трёх, удалить интертитр 6 и эту секцию целиком -->
-    <section class="v-section" data-v-act="flow" id="otzyvy" aria-label="Отзывы с Яндекс.Карт">
-      <div class="v-wrap reviews">
-        <div class="reviews__head" data-v-in data-v-stagger="60">
-          <div>
-            <span class="v-label">Яндекс.Карты</span>
-            <h2 class="v-display">Что пишут на Яндекс.Картах</h2>
-          </div>
-          <div class="reviews__rating">
-            <span class="reviews__num v-nums">{{рейтинг}}</span>
-            <span class="reviews__stars" data-r="{{рейтинг}}" role="img" aria-label="рейтинг {{рейтинг}} из 5"></span>
-            <span>{{отзывов}} отзывов · <a href="{{ссылка-карты}}" rel="noopener">Читать все отзывы</a></span>
-          </div>
-        </div>
-        <ul class="reviews__list" data-v-in data-v-stagger="90">
-          <li class="reviews__item reviews__item--big">
-            <p class="reviews__text">«{{отзыв 1}}»</p>
-            <p class="reviews__meta"><b>{{имя 1}}</b> · {{дата 1}} · <span class="reviews__stars reviews__stars--sm" data-r="{{оценка 1}}" role="img" aria-label="оценка {{оценка 1}} из 5"></span></p>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 2}}»</p>
-            <p class="reviews__meta"><b>{{имя 2}}</b> · {{дата 2}} · <span class="reviews__stars reviews__stars--sm" data-r="{{оценка 2}}" role="img" aria-label="оценка {{оценка 2}} из 5"></span></p>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 3}}»</p>
-            <p class="reviews__meta"><b>{{имя 3}}</b> · {{дата 3}} · <span class="reviews__stars reviews__stars--sm" data-r="{{оценка 3}}" role="img" aria-label="оценка {{оценка 3}} из 5"></span></p>
-          </li>
-        </ul>
-        <p class="reviews__note">Тексты отзывов приводим без правок, как они опубликованы на Яндекс.Картах. Оценка и число отзывов обновляются вместе с карточкой.</p>
       </div>
     </section>
 
@@ -755,18 +684,18 @@
           <div class="estimate__intro" data-v-in data-v-stagger="70">
             <span class="v-label">Цена</span>
             <h2 class="v-display">Что входит в цену за м²</h2>
-            <p>Цена за м² – это не «полотно от», а комплект: полотно, профиль, вставка, монтаж и уборка. Отдельно считаются только точки под свет и обходы, и они видны в расчёте до договора.</p>
+            <p>Цена за м² – это не «полотно от», а комплект: полотно, профиль, вставка, монтаж и уборка. Отдельно считаются только точки под свет, обходы труб и углы сверх четырёх, других доплат нет, и всё это видно в расчёте до договора.</p>
           </div>
           <!-- типы полотна: оставить только те, что заказчик реально делает -->
           <ul class="lines" data-v-in data-v-stagger="50">
-            <li><span>01</span><h3>Замер и расчёт</h3><p>{{условия замера}}. Расчёт на месте, по вашей комнате, с образцами полотна в руках.</p></li>
-            <li><span>02</span><h3>Полотно</h3><p>Матовое, сатиновое, глянцевое или тканевое, производитель {{производители}}. Ширина рулона и шов, если он нужен, обсуждаем на замере.</p></li>
+            <li><span>01</span><h3>Замер и расчёт</h3><p>Замер бесплатный, в день обращения или на следующий. Расчёт на месте, по вашей комнате, с образцами полотна в руках.</p></li>
+            <li><span>02</span><h3>Полотно</h3><p>Матовое, сатиновое, глянцевое или тканевое, полотна немецкие и китайские, сертификаты показываем на замере. Ширина рулона и шов, если он нужен, обсуждаем там же.</p></li>
             <li><span>03</span><h3>Профиль и вставка</h3><p>Профиль по всему периметру и маскировочная вставка в цвет стены или полотна.</p></li>
-            <li><span>04</span><h3>Монтаж и уборка</h3><p>Работа бригады, разогрев и натяжение, пылесос при сверлении, вывоз мусора. Один день на стандартную комнату.</p></li>
-            <li><span>05</span><h3>Светильники и люстра</h3><p>Считаются отдельно: закладная и монтаж точки – <b>{{цена светильник}} ₽</b>, люстра – <b>{{цена люстра}} ₽</b>. Сами светильники – ваши или из нашего каталога.</p></li>
-            <li><span>06</span><h3>Обходы и углы</h3><p>Отдельно: обход трубы – <b>{{цена обход трубы}} ₽</b>, угол сверх четырёх – <b>{{цена угол}} ₽</b>. Количество считаем на замере, а не «по факту».</p></li>
+            <li><span>04</span><h3>Монтаж и уборка</h3><p>Работа мастера с помощником, разогрев и натяжение, пылесос при сверлении, вывоз мусора. Один день на стандартную комнату.</p></li>
+            <li><span>05</span><h3>Светильники и люстра</h3><p>Считаются отдельно: закладная и монтаж точки – <b>350 ₽</b>, люстра – <b>600 ₽</b>. Сами светильники – ваши или из нашего каталога.</p></li>
+            <li><span>06</span><h3>Обходы и углы</h3><p>Отдельно: обход трубы – <b>250 ₽</b>, угол сверх четырёх – <b>150 ₽</b>. Количество считаем на замере, а не «по факту».</p></li>
             <li><span>07</span><h3>Что не делаем</h3><p>Отдельным списком, чтобы сюрпризов не было ни у вас, ни у нас: {{что не делаем}}.</p></li>
-            <li><span>08</span><h3>Ориентир по типам полотна</h3><p>Матовое от <b>{{цена матовое}} ₽</b>, сатиновое от <b>{{цена сатин}} ₽</b>, глянцевое от <b>{{цена глянец}} ₽</b>, тканевое от <b>{{цена ткань}} ₽</b> за м². Точная сумма – после замера, в договоре.</p></li>
+            <li><span>08</span><h3>Ориентир по типам полотна</h3><p>Матовое от <b>450 ₽</b>, сатиновое от <b>480 ₽</b>, глянцевое от <b>500 ₽</b>, тканевое от <b>1 200 ₽</b> за м². Точная сумма – после замера, в договоре.</p></li>
           </ul>
         </div>
         <figure class="estimate__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.4">
@@ -783,33 +712,32 @@
           <div data-v-in data-v-stagger="70">
             <span class="v-label">Расчёт</span>
             <h2 class="v-display">Стоимость по вашей комнате</h2>
-            <p class="colophon__price">Матовый потолок от <b>{{цена}} ₽</b> за м² с профилем и монтажом. <span>Точная сумма после замера: по вашей комнате, полотну и свету, с разбивкой по пунктам.</span></p>
+            <p class="colophon__price">Матовый потолок от <b>450 ₽</b> за м² с профилем и монтажом. <span>Точная сумма после замера: по вашей комнате, полотну и свету, с разбивкой по пунктам.</span></p>
             <ul class="lines" aria-label="Как начинаем">
-              <li><span>01</span><h3>Заявка или звонок</h3><p>Перезвоним, уточним комнату: площадь, сколько светильников, есть ли трубы и карниз.</p></li>
-              <li><span>02</span><h3>Замер</h3><p>{{условия замера}}. Привозим образцы полотна, считаем на месте.</p></li>
+              <li><span>01</span><h3>Заявка в Телеграм или звонок</h3><p>Уточним комнату: площадь, сколько светильников, есть ли трубы и карниз.</p></li>
+              <li><span>02</span><h3>Замер</h3><p>Бесплатно, по городу в день обращения или на следующий. Привозим образцы полотна, считаем на месте.</p></li>
               <li><span>03</span><h3>Расчёт и договор</h3><p>Сумма после замера не меняется. Дата монтажа и гарантия в договоре.</p></li>
               <li><span>04</span><h3>Монтаж</h3><p>Один день на стандартную комнату. Приёмка при включённом свете, акт, гарантийный талон.</p></li>
             </ul>
-            <p class="colophon__season"><b>Работаем:</b> {{часы_работы}}. Выезд на замер: {{условия выезда}}.</p>
+            <p class="colophon__season"><b>Работаем:</b> с 9:00 до 20:00 без выходных. Выезд на замер: Таганрог и Неклиновский район, до 40 км.</p>
           </div>
           <div class="colophon__meta" data-v-in data-v-stagger="80">
-            <!-- {{мастер}}: имя и фамилия, {{мастер год}}: с какого года на объектах. Вместо span с текстом вставить
-                 <img src="{{мастер фото}}" alt="{{мастер}}" width="144" height="144" loading="lazy"> -->
+            <!-- портрет Сергея: от-Сергея/сергей.jpg → assets/master-sm.webp (кадр по лицу, 288 px) -->
             <div class="crew">
-              <div class="crew__photo" role="img" aria-label="{{мастер фото}}"><span>фото</span></div>
-              <div class="crew__text"><b>{{мастер}}</b><span>монтажник, на объектах с {{мастер год}}. Он же принимает потолок вместе с вами.</span></div>
+              <div class="crew__photo"><img src="assets/master-sm.webp" alt="Сергей Климов" width="144" height="144" loading="lazy" decoding="async"></div>
+              <div class="crew__text"><b>Сергей Климов</b><span>самозанятый мастер, потолками с 2016 года. Сам замеряет, монтирует и принимает потолок вместе с вами.</span></div>
             </div>
             <!-- заполнить: в href телефон без пробелов, tel:+7XXXXXXXXXX; в тексте как удобно читать -->
-            <a class="colophon__tel" href="tel:{{телефон}}">{{телефон}}</a>
-            <span>{{адрес}}, {{город}}</span>
-            <!-- {{мессенджер}} из брифа: оставить те ссылки, что есть у заказчика -->
-            <p class="colophon__msg"><span>Или напишите:</span> <a href="{{ссылка-telegram}}" rel="noopener">Telegram</a> · <a href="{{ссылка-whatsapp}}" rel="noopener">WhatsApp</a> · <a href="{{ссылка-max}}" rel="noopener">MAX</a></p>
-            <a class="v-btn" href="{{ссылка-расчёта}}">Рассчитать стоимость</a>
-            <p class="colophon__after">Пришлите площадь комнаты и фото потолка в мессенджер: перезвоним и назовём ориентир до замера. Образцы договора и гарантийного талона: <a href="{{ссылка-образцы}}" rel="noopener">в PDF</a>.</p>
+            <a class="colophon__tel" href="tel:+79000000000">+7 900 000-00-00</a>
+            <span>Таганрог и Неклиновский район, выезд до 40 км. Офиса нет, работаем по заявкам.</span>
+            <!-- заявки только в Телеграм, WhatsApp и MAX Сергей не называл -->
+            <p class="colophon__msg"><span>Заявки принимаем в Телеграм:</span> <a href="https://t.me/potolki_klimov" target="_blank" rel="noopener">@potolki_klimov</a></p>
+            <a class="v-btn" href="https://t.me/potolki_klimov" target="_blank" rel="noopener">Рассчитать стоимость</a>
+            <p class="colophon__after">Пришлите площадь комнаты и фото потолка в Телеграм: ответим быстро и назовём ориентир до замера. Образцы договора и гарантийного талона: <a href="{{ссылка-образцы}}" rel="noopener">в PDF</a>.</p>
           </div>
         </div>
         <footer class="colophon__foot">
-          <span>{{компания}} · натяжные потолки · {{город}}</span>
+          <span>Потолки Климова · натяжные потолки · Таганрог</span>
           <span>{{юрлицо}} · ИНН {{ИНН}} · <a href="{{ссылка-политика}}" rel="noopener">Политика обработки персональных данных</a></span>
         </footer>
       </div>
@@ -821,12 +749,6 @@
 <script src="vibe.js"></script>
 <script>
   Vibe.mount(document.querySelector('.v-page'));
-
-  // Звёзды отзывов: заливка по числу из data-r («4,8» или «4.8»). Пока слот не заполнен, звёзды пустые.
-  Array.prototype.forEach.call(document.querySelectorAll('.reviews__stars[data-r]'), function (el) {
-    var n = parseFloat(String(el.getAttribute('data-r')).replace(',', '.'));
-    el.style.setProperty('--r', isNaN(n) ? 0 : Math.min(Math.max(n, 0), 5));
-  });
 
   // Закреплённое меню: на титуле прозрачное, дальше графит; бургер на телефоне;
   // активный пункт подчёркивается по текущему разделу.
@@ -859,7 +781,7 @@
   // Тот же прогресс идёт в 2px линию под меню.
   (function () {
     var chapters = Array.prototype.slice.call(document.querySelectorAll('[data-chapter]'));
-    var end = document.getElementById('ch6');
+    var end = document.getElementById('cena');
     var folio = document.getElementById('folio'), fill = document.getElementById('folioFill');
     var dots = Array.prototype.slice.call(folio.querySelectorAll('.folio__dot'));
     var navBar = document.getElementById('navBar');
